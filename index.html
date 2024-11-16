@@ -1,27 +1,65 @@
 <!DOCTYPE html>
 <html>
 <!--imagehosting= https://file.garden/ZaeB8rAXJwHlctfP-->
-<title>
-hellscape blog</title>
+<style>
+	img {
+    max-width: 100%;
+}
+    .center {
+	margin-left: auto;
+	margin-right: auto;
+} 
+	div#parentContainer { 
+    padding:50px; 
+    position:relative; 
+    } 
+	p#textToBeCovered { 
+    position:relative; 
+    z-index:0; } 
+	img#imageOnTop { 
+    left:5px; 
+    position:absolute; 
+    top:5px; 
+    z-index:1;
+    }
+  	.menulist {
+    border: 2px solid;
+    border-radius: 10px;
+    }
+    table {
+    width: 75%;
+    border: 6px solid;
+    border-style: double;
+    border-radius: 10px;
+    background-image: url("https://file.garden/ZaeB8rAXJwHlctfP/neotest/bg2.png");
+    }
+    body {
+  background-image: url("https://file.garden/ZaeB8rAXJwHlctfP/neotest/bg1.png");
+	}
+</style>
+<title>hellscape blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="faggit sick websyte">
 <body>
-<table>
+<table class="center">
+	<tr>
+    <div id="parentContainer"> 
+	<p id="textToBeCovered"><br /><br /><br /></p> 
+	<img id="imageOnTop" src="https://file.garden/ZaeB8rAXJwHlctfP/neotest/head.png" alt="top image" /> 
+</div> 
+    </tr>
     <tr>
-      <th colspan="2">Header</th>
+      <td class="menulist">Cell</td>
+      <td class="menulist">Cell</td>
+      <td class="menulist">Cell</td>
+      <td class="menulist">Cell</td>
     </tr>
     <tr>
       <td>Cell</td>
-      <td>Cell</td>
-      <td>Cell</td>      
-      <td>Cell</td>
-      <td>Cell</td>
     </tr>
     <tr>
-      <td>Cell</td>
-      <td>Cell</td>
+      <td class="menulist" colspan="5">Cell</td>
     </tr>
 </table>
-
 </body>
 </html>
